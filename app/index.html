@@ -114,13 +114,21 @@
     </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!-- Probably you would like to use cross domain tracking if this is deployed in a sub-domain or other domain
+      - https://support.google.com/analytics/answer/1034342?vid=1-635798582112982250-3966944381
+    -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
        }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-       ga('create', 'UA-XXXXX-X');
+       // todo - use your own tracking ID
+       // ga('create', 'UA-XXXXX-X');
+       // cross domain config
+       ga('create', 'UA-8535654-1', 'auto', {'allowLinker': true});
+        ga('require', 'linker');
+        ga('linker:autoLink', ['ssinco.com.mx'] );
        ga('send', 'pageview');
     </script>
 
