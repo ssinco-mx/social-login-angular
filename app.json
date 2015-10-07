@@ -1,0 +1,7 @@
+{
+  "name": "Social Login Demo with AngularJS",
+  "description": "A client side template for Social Login using Express AngularJS",
+  "repository": "https://github.com/ssinco-mx/social-login-angular",
+  "logo": "http://blog.ssinco.com.mx/wp-content/uploads/2015/03/logo-ssinco-vertical-sin-efectos-54fe4670v1_site_icon.png",
+  "keywords": ["node", "angular", "template"]
+}
